@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
+import { AltaClienteComponent } from './alta-cliente/alta-cliente.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'alta-cliente', component: AltaClienteComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
